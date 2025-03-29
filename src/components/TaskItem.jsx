@@ -128,9 +128,9 @@ const TaskItem = ({ task, categoryColor, onDragStart, onDragEnd, onDragOver, isD
               <FaGripLines />
             </div>
           )}
-          <div className="flex-1">
+          <div className="flex-1 w-auto">
             <div 
-              className="flex items-center cursor-pointer"
+              className="flex items-center cursor-pointer overflow-x-auto"
               onClick={() => setIsExpanded(!isExpanded)}
             >
               <input
@@ -144,7 +144,7 @@ const TaskItem = ({ task, categoryColor, onDragStart, onDragEnd, onDragOver, isD
                 onClick={(e) => e.stopPropagation()}
               />
               <h3 
-                className={`text-lg font-medium ${task.completed ? 'line-through' : ''}`}
+                className={`text-lg font-medium overflow-x-auto ${task.completed ? 'line-through' : ''}`}
               >
                 {task.title}
               </h3>

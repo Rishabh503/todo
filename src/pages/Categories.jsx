@@ -29,7 +29,7 @@ const Categories = () => {
       )}
       
       {categories.length > 0 ? (
-        <div className="space-y-6">
+        <div className="grid sm:grid-cols-2  gap-2">
           {categories.map(category => (
             <TaskList key={category.id} category={category} />
           ))}
