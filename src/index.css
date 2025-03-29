@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f8f9fa;
+}
+
+.retro-shadow {
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.8);
+}
+
+.task-item {
+  transition: all 0.3s ease;
+  border: 1px solid #333;
+}
+
+.task-completed {
+  text-decoration: line-through;
+  background-color: #d1fae5;
+  opacity: 0.7;
+}
+
+.calendar-day {
+  min-height: 120px;
+  transition: all 0.2s ease;
+}
+
+.calendar-day:hover {
+  transform: scale(1.02);
+}
+
+.dragging {
+  opacity: 0.6;
+}
