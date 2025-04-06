@@ -18,7 +18,7 @@ function App() {
           <div className="container mx-auto flex justify-between items-center">
             <h1 className="text-2xl md:text-3xl font-bold flex items-center gap-2">
               <FaRegCalendarCheck />
-              RetroTracker
+              Rishabh tracker
             </h1>
           </div>
         </header>
